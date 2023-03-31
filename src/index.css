@@ -1,13 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Play", sans-serif;
+  font-size: 1.5rem;
+  background-color: #646c79;
+  color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="text"],
+button {
+  font: inherit;
+}
+
+main {
+  background-color: #1f3044;
+  margin: auto;
+  max-width: 600px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(189, 128, 49, 0.56) 0px 22px 70px 4px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+article {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #646c79;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 1rem;
+}
+
+button {
+  min-width: 50px;
+  min-height: 50px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.trash {
+  background-color: #fff;
+  color: #fb9039;
+}
+
+.trash:focus,
+.trash:hover {
+  filter: brightness(120%);
+  color: red;
+}
+
+form {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+  background-color: #fb9039;
+  border-radius: 20px;
+}
+
+form label {
+  position: absolute;
+  left: -10000px;
+}
+
+.new-todo {
+  width: 100%;
+  padding-right: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid #333;
+}
+
+.submit {
+  background-color: #1f3044;
+  color: #fb9039;
+}
+
+.submit:focus,
+.submit:hover {
+  background-color: limegreen;
+  color: #1f3044;
 }
